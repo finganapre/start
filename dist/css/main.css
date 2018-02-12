@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'DaxlinePro-Bold';
+  src: url(../fonts/DaxlinePro-Bold.woff2) format("woff2"), url("../fonts/DaxlinePro-Bold.ttf") format("truetype"), url("../fonts/DaxlinePro-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 body, html {
   background-color: white;
   font-size: 16px;
@@ -113,7 +119,7 @@ header.main-header {
     padding: 0;
     margin: 0;
     padding-left: 10px;
-    margin-top: 3px;
+    margin-top: -7px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -174,6 +180,10 @@ header.main-header {
   -webkit-align-content: flex-start;
       -ms-flex-line-pack: start;
           align-content: flex-start; }
+  .chalengeContainer__img {
+    width: 50px;
+    height: auto;
+    margin-top: -16px; }
   .chalengeContainer p {
     color: white;
     margin-left: 20px; }
@@ -182,7 +192,8 @@ header.main-header {
   font-size: 3em;
   line-height: 4.7rem;
   color: white;
-  margin-top: 90px; }
+  margin-top: 90px;
+  font-weight: 600; }
 
 .newspaperLinks {
   width: 100%;
@@ -579,8 +590,8 @@ header.main-header {
           align-content: center;
   height: 100%; }
   .gufkLogoContainer__logo {
-    width: auto;
-    height: 100%; }
+    width: 200px;
+    height: auto; }
 
 /* colorClasses */
 .orange-bg {
@@ -811,6 +822,10 @@ html, body {
   .gufkLogoContainer {
     margin-bottom: 20px;
     max-height: 200px; }
+    .gufkLogoContainer__logo {
+      width: auto;
+      height: 150px;
+      margin-bottom: 20px; }
   .main-header {
     padding-top: 30px !important;
     padding-bottom: 30px !important; }
