@@ -1,0 +1,575 @@
+@import "_varSass.sass"
+
+@font-face
+	font-family: 'DaxlinePro-Bold'
+	src: url(../fonts/DaxlinePro-Bold.woff2) format('woff2'), url('../fonts/DaxlinePro-Bold.ttf')  format('truetype'), url('../fonts/DaxlinePro-Bold.woff') format('woff')
+	font-weight: normal
+	font-style: normal
+
+body, html
+	background-color: white
+	font-size: 16px
+	min-width: 303px
+
+.siteLink
+	padding-top: 10px
+	padding-bottom: 10px
+	&__link
+		font-weight: bold
+		color: $white
+		text-transform: uppercase
+		font-size: 0.8em
+		&:hover
+			color: $white
+	&__link--grey
+		color: $lightGrey
+		&:hover
+			color: $lightGrey
+
+.contacts
+	padding-top: 10px
+	padding-bottom: 10px
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	align-items: center
+	flex-wrap: nowrap
+	align-content: center
+	align-self: center
+	&__phoneIcon
+		margin-right: 10px
+		color: $white
+		&--grey
+			color: $lightGrey
+	&__tel
+		color: $white
+		font-weight: bold
+		&:hover
+			text-decoration: none
+			color: $white
+		&--grey
+			color: $lightGrey
+			&:hover
+				color: $lightGrey
+
+
+header.main-header
+	height: auto
+	background: url('../img/main-bg.jpg') 100% 100% no-repeat
+	background-size: cover;
+	padding-top: 60px
+	padding-bottom: 60px
+
+	&--color
+		background: none
+		background-color: $darkBlue
+
+.logoContainer
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	flex-wrap: nowrap
+	align-content: flex-start
+	align-self: flex-start
+	& a
+		&:hover
+			text-decoration: none
+	&__h1
+		text-transform: uppercase
+		color: white
+		font-size: 6em
+		line-height: 0.7em
+	&__ul
+		padding: 0
+		margin: 0
+		padding-left: 10px
+		margin-top: -7px
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+		/*&:first-child
+			padding-right: 25px*/
+		&__li
+			list-style: none
+			color: white
+			font-size: 0.7em
+			padding: 0 0 1.5px 10px
+			line-height: 1.4em
+			font-weight: bold
+			&--first
+				padding-right: 25px
+			&--two
+				padding-right: 30px
+			&--three
+				padding-right: 15px
+			&--four
+				padding-right: 20px
+
+
+.chalengeContainer
+	width: 100%
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	align-items: center
+	flex-wrap: nowrap
+	align-content: flex-start
+	&__img
+		width: 50px
+		height: auto
+		margin-top: -16px
+	& p
+		color: white
+		margin-left: 20px
+
+.headerH
+	font-size: 3em
+	line-height: 4.7rem
+	color: white
+	margin-top: 90px
+	font-weight: 600
+.newspaperLinks
+	width: 100%
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: flex-start
+	flex-wrap: wrap
+	align-content: flex-start
+	&__newNewspaper
+		margin-right: 20px
+
+.download
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+	flex-wrap: nowrap
+	align-content: flex-start
+	& .fas
+		font-size: 2em
+		color: white
+	& a
+		margin-left: 20px
+		color: white
+		font-size: 1.1em
+
+.section
+	margin-top: 30px
+
+	&--card
+		margin-bottom: -30px
+
+.h3
+	margin-bottom: 20px
+	color: $grey
+	font-weight: 400
+
+.artPrew
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	flex-wrap: nowrap
+	align-content: flex-start
+	margin-bottom: 20px
+	padding-bottom: 20px
+	border-bottom: solid $lightGrey2 1px
+	&--all
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		flex-wrap: nowrap
+		align-content: flex-start
+		margin-bottom: 15px
+		border-bottom: none
+	&__date
+		margin-left: 20px
+		color: $lightGrey
+	&__h
+		margin-left: 40px
+		color: $blue
+		&:hover
+			color: $blue
+		&--all
+			color: $lightGrey
+			&:hover
+				color: $lightGrey
+
+.baner
+	padding: 30px
+	background-color: $green
+	color: white
+	&__h3
+		font-weight: 400
+		line-height: 1.35em
+	&__p
+		margin-top: 20px
+		margin-bottom: 40px
+	&__button
+		display: inline-block
+		border: none
+		border: 2px solid white
+		color: #fff
+		text-decoration: none
+		background-color: rgba(0, 0, 0, 0)
+		padding: 15px 45px
+		font-size: 13px
+		text-transform: uppercase
+		font-weight: 600
+		letter-spacing: 3px
+		border-radius: 2px
+		text-align: center
+		position: relative
+		outline: none
+		transition: background-color .1s ease
+		cursor: pointer
+		&:focus, &:hover
+			text-decoration: none
+			color: #fff
+			outline: none
+		&:hover
+			background-color: white
+			color: $green
+
+.iconHead
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: baseline
+	flex-wrap: nowrap
+	align-content: flex-start
+	& .h3
+	& .fa-camera
+		color: $grey
+		font-size: 1.43em
+		margin-right: 20px
+
+.photoPrew
+	&__item
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: baseline
+		flex-wrap: nowrap
+		align-content: flex-start
+		padding-top: 10px
+		&:first-child
+			padding-top: 0
+		&__h
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: baseline
+			flex-wrap: nowrap
+			align-content: flex-start
+		&__quantity
+				text-align: center
+				color: $lightGrey
+				margin-right: 40px
+				margin-left: 20px
+		&__a
+			color: $blue
+			display: block
+			margin-bottom: 10px
+			&:hover
+				color: $blue
+		&__photos
+			width: 100%
+			margin-bottom: 10px
+			padding-top: 5px
+			padding-bottom: 5px
+			border-bottom: solid $lightGrey2 1px
+		&__all
+			display: block
+			width: 100%
+			text-align: right
+			color: $lightGrey
+			&:hover
+				color: $lightGrey
+
+// newspapers block
+
+.newspapers
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	align-items: flex-start
+	flex-wrap: wrap
+	align-content: flex-start
+	&__item
+		margin-bottom: 30px
+		border: 1px solid $lightGrey2
+		border-radius: 2px
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+		transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+		&:hover
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+		&__topHead
+			//background-color: $darkBlue
+			padding: 20px
+			color: $blue
+			margin-bottom: 20px
+			border-bottom: 1px solid $lightGrey2
+		&__head
+			padding: 0 20px 20px 20px
+			border-bottom: 1px solid $lightGrey2
+			text-align: center
+			&__img
+				height: 230px
+				width: auto
+
+		&__body
+			padding: 10px 20px 20px 20px
+			&__subHeader
+				float: left
+				width: 100%
+				&__date
+					float: right
+					color: $white
+					margin-right: -20px
+					padding: 5px 10px 8px 10px
+					background-color: $orange
+			&__text
+				color: $grey
+		&__action
+			padding: 0 20px 20px 20px
+			&__mainButton
+				margin-bottom: 15px
+				margin-right: 20px
+			&__subButton
+				background-color: white
+
+.filters
+	border-radius: 2px
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+	padding: 20px
+	&__item
+		border-radius: 2px
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+		margin-bottom: 20px
+		padding: 20px
+
+
+
+
+.footer
+	margin-top: 30px
+	padding-top: 30px
+	padding-bottom: 30px
+	color: $grey
+
+.gufkLogoContainer
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	align-content: center
+	height: 100%
+	//text-align: center
+	&__logo
+		width: 200px
+		height: auto
+
+
+
+
+
+
+/* colorClasses */
+.orange-bg
+	background-color: $orange
+.red-bg
+	background-color: $red
+.blue-bg
+	background-color: $blue
+.green-bg
+	background-color: $green
+.darkGrey-bg
+	background-color: $darkGrey
+.white-bg
+	background-color: $white
+
+/* marginClasses */
+.mrg-t-10
+	margin-top: 10px
+.mrg-t-20
+	margin-top: 20px
+.mrg-t-30
+	margin-top: 30px
+.mrg-t-40
+	margin-top: 40px
+.mrg-t-50
+	margin-top: 50px
+.mrg-t-60
+	margin-top: 60px
+.mrg-t-70
+	margin-top: 70px
+.mrg-t-80
+	margin-top: 80px
+.mrg-t-90
+	margin-top: 90px
+.mrg-t-100
+	margin-top: 100px
+
+/* no-padding */
+.no-padding
+	padding-left: 0
+	padding-right: 0
+
+
+// ----- default Sass Style ----- //
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $green
+	padding: 15px 45px
+	font-size: 14px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($green, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+		outline: none
+	&:hover
+		background-color: lighten($green, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($green, 5%)
+		&::after
+			opacity: .32
+
+.opacityButton
+	display: inline-block
+	border: none
+	border: 2px solid white
+	color: #fff
+	text-decoration: none
+	background-color: rgba(0, 0, 0, 0)
+	padding: 15px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&--viceVersa
+		color: $lightGrey !important
+		border: 2px solid $lightGrey2
+		background-color: rgba(0, 0, 0, 0)
+		&:focus, &:hover
+			text-decoration: none
+			color: $lightGrey
+			outline: none
+		&:hover
+			background-color: $lightGrey !important
+			border: 2px solid $lightGrey
+			color: $white !important
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+		outline: none
+	&:hover
+		background-color: white
+		color: $textColor
+	
+
+.linerGradient
+	width: 100%
+	height: 60px
+	position: absolute
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	&--top
+		top: 43px
+		left: 0
+	&--bottom
+		bottom: 0
+		left: 0
+
+a.tel
+	color: $grey
+	text-decoration: none
+
+/* прижимаем фуутер к низу страницы */
+html, body
+	height: 100%
+.wrapper
+	display: flex
+	flex-direction: column
+	height: 100%
+.content
+	flex: 1 0 auto
+.footer
+	flex: 0 0 auto
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px)
+	.logoContainer__h1
+		font-size: 4em
+	.contacts
+		padding-top: 0
+		justify-content: center
+		align-items: center
+		align-content: center
+		align-self: center
+	.siteLink
+		text-align: center
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 767px)
+	.gufkLogoContainer
+	body, html
+		font-size: 14px
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 991px)
+	.logoContainer
+		justify-content: center
+	.chalengeContainer
+		margin-top: 30px
+	.gufkLogoContainer
+		margin-bottom: 20px
+		max-height: 200px
+		&__logo
+			width: auto
+			height: 150px
+			margin-bottom: 20px
+	.main-header
+		padding-top: 30px !important
+		padding-bottom: 30px !important
+	.headerH
+		margin-top: 30px
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1199px)
+	.contacts
