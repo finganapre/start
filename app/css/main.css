@@ -111,6 +111,7 @@ header.main-header {
   .logoContainer a:hover {
     text-decoration: none; }
   .logoContainer__h1 {
+    font-family: 'DaxlinePro-Bold';
     text-transform: uppercase;
     color: white;
     font-size: 6em;
@@ -119,7 +120,7 @@ header.main-header {
     padding: 0;
     margin: 0;
     padding-left: 10px;
-    margin-top: 2px;
+    margin-top: -30px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -179,7 +180,8 @@ header.main-header {
           flex-wrap: nowrap;
   -webkit-align-content: flex-start;
       -ms-flex-line-pack: start;
-          align-content: flex-start; }
+          align-content: flex-start;
+  margin-top: -18px; }
   .chalengeContainer__img {
     width: 50px;
     height: auto;

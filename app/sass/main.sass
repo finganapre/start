@@ -1,10 +1,5 @@
 @import "_varSass.sass"
-
-@font-face
-	font-family: 'DaxlinePro-Bold'
-	src: url(../fonts/DaxlinePro-Bold.woff2) format('woff2'), url('../fonts/DaxlinePro-Bold.ttf')  format('truetype'), url('../fonts/DaxlinePro-Bold.woff') format('woff')
-	font-weight: normal
-	font-style: normal
+@import "_fonts.sass"
 
 body, html
 	background-color: white
@@ -76,6 +71,7 @@ header.main-header
 		&:hover
 			text-decoration: none
 	&__h1
+		font-family: 'DaxlinePro-Bold'
 		text-transform: uppercase
 		color: white
 		font-size: 6em
@@ -84,7 +80,7 @@ header.main-header
 		padding: 0
 		margin: 0
 		padding-left: 10px
-		margin-top: 2px
+		margin-top: -30px
 		display: flex
 		flex-direction: column
 		justify-content: flex-start
@@ -116,6 +112,7 @@ header.main-header
 	align-items: center
 	flex-wrap: nowrap
 	align-content: flex-start
+	margin-top: -18px
 	&__img
 		width: 50px
 		height: auto

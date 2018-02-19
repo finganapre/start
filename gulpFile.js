@@ -100,7 +100,7 @@ gulp.task('build', ['clean-dist', 'min-image', 'sass', 'scripts-min'], function(
 		.pipe(gulp.dest('dist/fonts'));
 
 	var buildFontAwesome = gulp.src('app/webfonts/**/*')
-		.pipe(gulp.dest('dist/webfonts/fonts'));
+		.pipe(gulp.dest('dist/webfonts/'));
 
 	var buildJs = gulp.src('app/js/**/*.js')
 		.pipe(gulp.dest('dist/js'));
